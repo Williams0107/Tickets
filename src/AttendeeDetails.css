@@ -1,0 +1,168 @@
+/* General Page Styling */
+.attendee-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0a1c1f;
+  color: white;
+}
+
+/* Card Container */
+.attendee-card {
+  width: 400px;
+  background-color: #112b2f;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.attendee-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.step-info {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background: gray;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.progress-fill {
+  width: 66%;
+  height: 5px;
+  background: teal;
+  border-radius: 5px;
+  position: absolute;
+}
+
+/* Upload Section */
+.upload-section p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.upload-box {
+  border: 2px dashed gray;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.upload-box.dragging {
+  border-color: teal;
+}
+
+.upload-text {
+  color: gray;
+  font-size: 12px;
+}
+
+.preview-image {
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Input Fields */
+label {
+  display: block;
+  font-size: 14px;
+  margin: 20px 0 5px;
+}
+
+input,
+textarea {
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background: #1b3b41;
+  color: white;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: teal;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Email Input with Icon */
+.email-input {
+  position: relative;
+}
+
+.email-input span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+.email-input input {
+  /* padding-left: 30px; */
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.back-btn,
+.submit-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.back-btn {
+  background: transparent;
+  border: 1px solid teal;
+  color: teal;
+}
+
+.back-btn:hover {
+  background: teal;
+  color: white;
+}
+
+.submit-btn {
+  background: teal;
+  border: none;
+  color: white;
+}
+
+.submit-btn:hover {
+  background: #008080;
+}
+
+@media (max-width: 480px) {
+  .attendee-container {
+    magin-top: 60px;
+  }
+}

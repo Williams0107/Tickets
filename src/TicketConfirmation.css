@@ -1,0 +1,216 @@
+/* Page Layout */
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-color: #0a1c1f;
+  color: white;
+}
+
+/* Card Styling */
+.confirmation-card {
+  width: 315px;
+  border: 1px solid #5bb5a5;
+  /* height: 58%; */
+  background-color: #112b2f;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Header */
+.confirmation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.step-info {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background: gray;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.progress-fill {
+  width: 100%;
+  height: 5px;
+  background: teal;
+  border-radius: 5px;
+  position: absolute;
+}
+
+/* Success Message */
+.success-message {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.info-text {
+  font-size: 14px;
+  color: gray;
+}
+
+.download-text {
+  font-weight: bold;
+  color: teal;
+  cursor: pointer;
+}
+
+/* Ticket Wrapper */
+.ticket-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Ticket Card */
+.ticket-card {
+  width: 362px;
+  height: 100%;
+  background-image: url("/bg.png"); /* Use from public folder */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Ticket Content */
+.ticket-content {
+  /* width: 80%; */
+  text-align: center;
+  color: white;
+}
+
+/* Event Title */
+.event-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Event Info */
+.event-info {
+  font-size: 14px;
+  color: white;
+}
+
+/* Profile Image */
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.profile-image img {
+  border: 4px solid #3996a5;
+  width: 170px;
+  height: 170px;
+  border-radius: 19%;
+}
+
+/* Ticket Details */
+.ticket-details {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.ticket-details p {
+  margin: 5px 0;
+}
+
+/* Barcode */
+.barcode {
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.book-again-btn,
+.download-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.book-again-btn {
+  background: transparent;
+  border: 1px solid teal;
+  color: teal;
+}
+
+.book-again-btn:hover {
+  background: teal;
+  color: white;
+}
+
+.download-btn {
+  background: teal;
+  border: none;
+  color: white;
+}
+
+.download-btn:hover {
+  background: #008080;
+}
+
+.svg {
+}
+
+/* Grid for Ticket Details */
+.ticket-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  /* gap: 10px; Space between items */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid teal;
+}
+
+/* Individual Item */
+.ticket-detail-item {
+  /* padding: 10px; */
+  text-align: center;
+  border-bottom: 1px solid gray; /* Horizontal Line */
+}
+
+/* Ensure only the bottom row doesn't have a border */
+.ticket-detail-item:nth-child(3),
+.ticket-detail-item:nth-child(4) {
+  border-bottom: none;
+}
+
+/* Vertical Line Between Columns */
+.ticket-detail-item:nth-child(odd) {
+  border-right: 1px solid gray;
+}
